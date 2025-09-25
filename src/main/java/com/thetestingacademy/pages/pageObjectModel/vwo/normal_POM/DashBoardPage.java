@@ -9,6 +9,7 @@ public class DashBoardPage {
     WebDriver driver;
 
     public DashBoardPage(WebDriver driver) {
+
         this.driver = driver;
     }
 

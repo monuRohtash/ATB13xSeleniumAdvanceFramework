@@ -5,6 +5,7 @@ import com.thetestingacademy.driver.DriverManger;
 import com.thetestingacademy.pages.pageObjectModel.vwo.Prop_POM.DashBoardPage_Proper_Pom;
 import com.thetestingacademy.pages.pageObjectModel.vwo.Prop_POM.LoginPage_Proper_Pom;
 import com.thetestingacademy.pages.pageObjectModel.vwo.normal_POM.DashBoardPage;
+import com.thetestingacademy.pages.pageObjectModel.vwo.normal_POM.LogOutPage;
 import com.thetestingacademy.pages.pageObjectModel.vwo.normal_POM.LoginPage;
 import com.thetestingacademy.utils.PropertiesReader;
 import io.qameta.allure.Description;
@@ -34,7 +35,7 @@ public class TestVWOLogin_02_Prop_POM extends CommonToAllTest {
     @Test
     public void test_negative_vwo_login() {
 
-        logger.info("Starting the Testcases Page Object Model");
+        logger.info("Starting the test_negative_vwo_login");
 
 
         // Page Class Code (POM Code) - 2 - L
@@ -54,10 +55,10 @@ public class TestVWOLogin_02_Prop_POM extends CommonToAllTest {
 
     @Owner("Rohtash")
     @Description("TC#2-Verify that valid creds dashboard page is loaded")
-    @Test(dependsOnMethods = "TestVWOLogin_02_Prop_POM")
+    @Test
     public void testLoginPositiveVWO() {
 
-        logger.info("Starting the Testcases Page Object Model");
+        logger.info("Starting the testLoginPositiveVWO");
 
 
         // Page Class Code (POM Code) - 2 - L
@@ -70,6 +71,15 @@ public class TestVWOLogin_02_Prop_POM extends CommonToAllTest {
         assertThat(usernameLoggedIn).isNotBlank().isNotNull().isNotEmpty();
         logger.info("Done the Test cases");
         Assert.assertEquals(usernameLoggedIn,PropertiesReader.readKey("expected_username"));
+
+        logger.info("click on logout button");
+
+        LogOutPage logOutPage = new LogOutPage(DriverManger.getDriver());
+        String verifyLoginPage =logOutPage.logoutUser();
+
+        logger.info("Sign in to VWO platform ");
+
+        Assert.assertEquals(verifyLoginPage, "");
 
 
 

@@ -2,6 +2,7 @@ package com.thetestingacademy.tests.vwo.pageObjectModelTC;
 
 import com.thetestingacademy.pages.pageObjectModel.vwo.normal_POM.DashBoardPage;
 import com.thetestingacademy.pages.pageObjectModel.vwo.normal_POM.FreeTrialPage;
+import com.thetestingacademy.pages.pageObjectModel.vwo.normal_POM.LogOutPage;
 import com.thetestingacademy.pages.pageObjectModel.vwo.normal_POM.LoginPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -13,6 +14,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
@@ -23,7 +27,7 @@ public class Test_VWOLogin_01_Normal_POM {
     //  D
     // L
     // V
-
+    private static final Logger logger = LogManager.getLogger(Test_VWOLogin_01_Normal_POM.class);
 
     @Owner("Rohtash")
     @Description("Verify that with invalid email, pass, error message is shown on the app.vwo.com")
@@ -58,7 +62,7 @@ public class Test_VWOLogin_01_Normal_POM {
 
     @Owner("Rohtash")
     @Description("TC#2-Verify that valid creds dashboard page is loaded")
-    @Test(dependsOnMethods = "")
+    @Test
     public void testLoginPositiveVWO() {
 
         // Driver Manager Code - 1
@@ -76,12 +80,15 @@ public class Test_VWOLogin_01_Normal_POM {
         Assert.assertEquals(usernameLoggedIn,"Amcret");
 
 
+        logger.info("click on logout button");
+        LogOutPage logOutPage = new LogOutPage(driver);
+        String verifyLoginPage =logOutPage.logoutUser();
 
-
+        logger.info("Sign in to VWO platform ");
+        Assert.assertEquals(verifyLoginPage, "");
 
 
         driver.quit();
-
 
     }
 

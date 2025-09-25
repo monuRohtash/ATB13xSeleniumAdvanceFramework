@@ -32,21 +32,26 @@ public class DriverManger {
         switch (browser) {
             case "edge":
                 EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--start-maximized");
+                edgeOptions.addArguments("--guest");
                 driver = new EdgeDriver(edgeOptions);
                 break;
 
             case "firefox":
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addArguments("--Start-maximized");
                 driver = new FirefoxDriver(firefoxOptions);
                 break;
 
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--start-maximized");
                 driver = new ChromeDriver(chromeOptions);
                 break;
 
             default:
                 System.out.println("NOt BRowser SUported!");
+                throw new IllegalArgumentException("❌ Browser not supported: " + browser);
         }
 
     }

@@ -5,3 +5,97 @@
 2025-09-24 00:49:46 INFO  TestVWOLogin_02_Prop_POM - Done the Test cases
 2025-09-24 00:49:48 INFO  TestVWOLogin_02_Prop_POM - Starting the Testcases Page Object Model
 2025-09-24 00:50:00 INFO  TestVWOLogin_02_Prop_POM - Asserting the invalid credentials
+2025-09-24 10:13:03 INFO  TestVWOLogin_02_Prop_POM - Starting the testLoginPositiveVWO
+2025-09-24 10:13:29 INFO  TestVWOLogin_02_Prop_POM - Done the Test cases
+2025-09-24 10:13:31 INFO  TestVWOLogin_02_Prop_POM - Starting the test_negative_vwo_login
+2025-09-24 10:13:41 INFO  TestVWOLogin_02_Prop_POM - Asserting the invalid credentials
+2025-09-24 11:05:56 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-24 11:06:02 INFO  Test_VWOLogin_01_Normal_POM - Sign in to VWO platform 
+2025-09-24 11:08:19 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-24 11:08:25 INFO  Test_VWOLogin_01_Normal_POM - Sign in to VWO platform 
+2025-09-24 11:11:18 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-24 11:11:24 INFO  Test_VWOLogin_01_Normal_POM - Sign in to VWO platform 
+2025-09-24 11:14:39 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-24 11:15:49 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-24 11:17:08 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-24 11:19:20 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-24 11:24:15 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-24 11:26:01 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-24 11:31:30 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-24 11:33:30 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-24 11:33:36 INFO  Test_VWOLogin_01_Normal_POM - Sign in to VWO platform 
+2025-09-24 11:42:36 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-24 11:42:39 INFO  Test_VWOLogin_01_Normal_POM - Sign in to VWO platform 
+2025-09-24 18:25:49 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-24 18:25:50 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-24 18:26:16 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-24 18:26:16 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-24 18:26:36 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-24 18:26:37 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-24 18:27:44 INFO  TestVWOLogin_02_Prop_POM - Starting the testLoginPositiveVWO
+2025-09-24 18:28:08 INFO  TestVWOLogin_02_Prop_POM - Done the Test cases
+2025-09-24 18:28:08 INFO  TestVWOLogin_02_Prop_POM - click on logout button
+2025-09-24 18:28:11 INFO  TestVWOLogin_02_Prop_POM - Sign in to VWO platform 
+2025-09-24 18:28:12 INFO  TestVWOLogin_02_Prop_POM - Starting the test_negative_vwo_login
+2025-09-24 18:28:21 INFO  TestVWOLogin_02_Prop_POM - Asserting the invalid credentials
+2025-09-24 18:33:58 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-24 18:33:59 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-24 18:35:35 INFO  TestVWOLogin_02_Prop_POM - Starting the test_negative_vwo_login
+2025-09-24 18:35:45 INFO  TestVWOLogin_02_Prop_POM - Asserting the invalid credentials
+2025-09-24 18:35:46 INFO  TestVWOLogin_02_Prop_POM - Starting the testLoginPositiveVWO
+2025-09-24 18:36:10 INFO  TestVWOLogin_02_Prop_POM - Done the Test cases
+2025-09-24 18:36:10 INFO  TestVWOLogin_02_Prop_POM - click on logout button
+2025-09-24 18:36:13 INFO  TestVWOLogin_02_Prop_POM - Sign in to VWO platform 
+2025-09-24 18:36:55 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-24 18:36:58 INFO  Test_VWOLogin_01_Normal_POM - Sign in to VWO platform 
+2025-09-24 18:37:20 INFO  TestVWOLogin_02_Prop_POM - Starting the testLoginPositiveVWO
+2025-09-24 18:37:44 INFO  TestVWOLogin_02_Prop_POM - Done the Test cases
+2025-09-24 18:37:44 INFO  TestVWOLogin_02_Prop_POM - click on logout button
+2025-09-24 18:37:47 INFO  TestVWOLogin_02_Prop_POM - Sign in to VWO platform 
+2025-09-24 18:37:48 INFO  TestVWOLogin_02_Prop_POM - Starting the test_negative_vwo_login
+2025-09-24 18:37:58 INFO  TestVWOLogin_02_Prop_POM - Asserting the invalid credentials
+2025-09-24 18:38:15 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-24 18:38:15 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-24 18:41:53 INFO  TestVWOLogin_02_Prop_POM - Starting the test_negative_vwo_login
+2025-09-24 18:42:03 INFO  TestVWOLogin_02_Prop_POM - Asserting the invalid credentials
+2025-09-24 18:42:04 INFO  TestVWOLogin_02_Prop_POM - Starting the testLoginPositiveVWO
+2025-09-24 18:42:28 INFO  TestVWOLogin_02_Prop_POM - Done the Test cases
+2025-09-24 18:42:28 INFO  TestVWOLogin_02_Prop_POM - click on logout button
+2025-09-24 18:42:31 INFO  TestVWOLogin_02_Prop_POM - Sign in to VWO platform 
+2025-09-24 18:43:10 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-24 18:43:13 INFO  Test_VWOLogin_01_Normal_POM - Sign in to VWO platform 
+2025-09-24 18:47:41 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-24 18:57:15 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-24 18:57:30 INFO  TestVWOLogin_03_Prop_Improved_POM - Done the Test cases
+2025-09-24 18:57:32 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the testLoginPositiveVWO
+2025-09-24 18:57:41 INFO  TestVWOLogin_03_Prop_Improved_POM - Asserting the invalid credentials
+2025-09-25 15:13:51 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the testLoginPositiveVWO
+2025-09-25 15:14:02 INFO  TestVWOLogin_03_Prop_Improved_POM - Asserting the invalid credentials
+2025-09-25 15:14:03 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 15:14:19 INFO  TestVWOLogin_03_Prop_Improved_POM - Done the Test cases
+2025-09-25 15:23:40 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the testLoginPositiveVWO
+2025-09-25 15:23:50 INFO  TestVWOLogin_03_Prop_Improved_POM - Asserting the invalid credentials
+2025-09-25 17:44:04 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 17:47:29 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 17:47:39 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 17:48:32 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 17:48:37 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 17:48:46 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 17:48:57 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 17:49:06 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 17:50:46 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 17:50:56 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 17:51:05 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 17:51:10 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 17:51:20 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model - test pass
+2025-09-25 18:31:10 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 18:31:21 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 18:31:34 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 18:31:44 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 18:31:49 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model - test pass
+2025-09-25 19:04:16 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 19:04:21 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 19:04:32 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 19:04:37 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-25 19:05:30 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model - test pass
+2025-09-25 19:14:03 INFO  DataDrivenTesting - Asserting the Invalid credentials
