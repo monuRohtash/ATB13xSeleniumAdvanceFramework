@@ -1,12 +1,10 @@
 package com.thetestingacademy.tests.vwo.pageObjectModelTC;
 
 import com.thetestingacademy.base.CommonToAllTest;
-import com.thetestingacademy.driver.DriverManger;
+import com.thetestingacademy.driver.DriverManager;
 import com.thetestingacademy.pages.pageObjectModel.vwo.Prop_POM.DashBoardPage_Proper_Pom;
 import com.thetestingacademy.pages.pageObjectModel.vwo.Prop_POM.LoginPage_Proper_Pom;
-import com.thetestingacademy.pages.pageObjectModel.vwo.normal_POM.DashBoardPage;
 import com.thetestingacademy.pages.pageObjectModel.vwo.normal_POM.LogOutPage;
-import com.thetestingacademy.pages.pageObjectModel.vwo.normal_POM.LoginPage;
 import com.thetestingacademy.utils.PropertiesReader;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -39,7 +37,7 @@ public class TestVWOLogin_02_Prop_POM extends CommonToAllTest {
 
 
         // Page Class Code (POM Code) - 2 - L
-        LoginPage_Proper_Pom loginPage = new LoginPage_Proper_Pom(DriverManger.getDriver());
+        LoginPage_Proper_Pom loginPage = new LoginPage_Proper_Pom(DriverManager.getDriver());
         String error_msg = loginPage.loginToVWOLoginInvalidCreds(PropertiesReader.readKey("invalid_username"),PropertiesReader.readKey("invalid_password"));
 
         // Assertions - 3 - V
@@ -62,10 +60,10 @@ public class TestVWOLogin_02_Prop_POM extends CommonToAllTest {
 
 
         // Page Class Code (POM Code) - 2 - L
-        LoginPage_Proper_Pom loginPage_VWO = new LoginPage_Proper_Pom(DriverManger.getDriver());
+        LoginPage_Proper_Pom loginPage_VWO = new LoginPage_Proper_Pom(DriverManager.getDriver());
         loginPage_VWO.loginToVWOLoginValidCreds(PropertiesReader.readKey("username"),PropertiesReader.readKey("password"));
 
-        DashBoardPage_Proper_Pom dashBoardPage  = new DashBoardPage_Proper_Pom(DriverManger.getDriver());
+        DashBoardPage_Proper_Pom dashBoardPage  = new DashBoardPage_Proper_Pom(DriverManager.getDriver());
         String usernameLoggedIn = dashBoardPage.loggedInUserName();
 
         assertThat(usernameLoggedIn).isNotBlank().isNotNull().isNotEmpty();
@@ -74,7 +72,7 @@ public class TestVWOLogin_02_Prop_POM extends CommonToAllTest {
 
         logger.info("click on logout button");
 
-        LogOutPage logOutPage = new LogOutPage(DriverManger.getDriver());
+        LogOutPage logOutPage = new LogOutPage(DriverManager.getDriver());
         String verifyLoginPage =logOutPage.logoutUser();
 
         logger.info("Sign in to VWO platform ");

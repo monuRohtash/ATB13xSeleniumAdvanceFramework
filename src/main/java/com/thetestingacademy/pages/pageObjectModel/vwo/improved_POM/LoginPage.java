@@ -5,7 +5,7 @@ import com.thetestingacademy.utils.WaitHelpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static com.thetestingacademy.driver.DriverManger.getDriver;
+import static com.thetestingacademy.driver.DriverManager.getDriver;
 
 public class LoginPage extends CommonToAllPage {
 

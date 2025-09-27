@@ -10,8 +10,7 @@ import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static com.thetestingacademy.driver.DriverManger.driver;
-import static com.thetestingacademy.driver.DriverManger.getDriver;
+import static com.thetestingacademy.driver.DriverManager.getDriver;
 
 public class ScreenshotUtils {
 

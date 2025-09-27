@@ -10,12 +10,10 @@ import org.testng.ITestResult;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
-import static com.thetestingacademy.driver.DriverManger.getDriver;
+import static com.thetestingacademy.driver.DriverManager.getDriver;
 
 public class ScreenshotListener implements ITestListener {
 

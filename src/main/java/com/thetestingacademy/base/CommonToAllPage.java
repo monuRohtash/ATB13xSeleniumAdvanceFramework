@@ -5,7 +5,7 @@ import com.thetestingacademy.utils.PropertiesReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import static com.thetestingacademy.driver.DriverManger.getDriver;
+import static com.thetestingacademy.driver.DriverManager.getDriver;
 
 public class CommonToAllPage {
 

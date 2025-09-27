@@ -9,9 +9,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-import java.util.Locale;
-
-public class DriverManger {
+public class DriverManager {
 
     public static WebDriver driver;
 
@@ -21,7 +19,7 @@ public class DriverManger {
     }
 
     public static void setDriver(WebDriver driver) {
-        DriverManger.driver = driver;
+        DriverManager.driver = driver;
     }
 
     // Initialize WebDriver
@@ -48,10 +46,9 @@ public class DriverManger {
                 chromeOptions.addArguments("--start-maximized");
                 driver = new ChromeDriver(chromeOptions);
                 break;
-
             default:
-                System.out.println("NOt BRowser SUported!");
-                throw new IllegalArgumentException("❌ Browser not supported: " + browser);
+                System.out.println(" ❌ Browser not supported: " + browser);
+
         }
 
     }
@@ -66,3 +63,4 @@ public class DriverManger {
     }
 
 }
+

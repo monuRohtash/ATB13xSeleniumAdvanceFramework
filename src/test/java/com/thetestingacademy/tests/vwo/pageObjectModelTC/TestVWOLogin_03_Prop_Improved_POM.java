@@ -1,8 +1,7 @@
 package com.thetestingacademy.tests.vwo.pageObjectModelTC;
 
-import com.thetestingacademy.base.CommonToAllPage;
 import com.thetestingacademy.base.CommonToAllTest;
-import com.thetestingacademy.driver.DriverManger;
+import com.thetestingacademy.driver.DriverManager;
 import com.thetestingacademy.pages.pageObjectModel.vwo.improved_POM.DashBoardPage;
 import com.thetestingacademy.pages.pageObjectModel.vwo.improved_POM.LoginPage;
 import com.thetestingacademy.utils.PropertiesReader;
@@ -32,7 +31,7 @@ public class TestVWOLogin_03_Prop_Improved_POM  extends CommonToAllTest {
         logger.info("Starting the testLoginPositiveVWO");
 
         // Page Class Code (POM Code) - 2 - L
-        LoginPage loginPage = new LoginPage(DriverManger.getDriver());
+        LoginPage loginPage = new LoginPage(DriverManager.getDriver());
         String error_msg = loginPage.loginToVWOLoginInvalidCreds(PropertiesReader.readKey("invalid_username"), PropertiesReader.readKey("invalid_password"));
 
         // Assertions - 3 - V
@@ -54,14 +53,14 @@ public class TestVWOLogin_03_Prop_Improved_POM  extends CommonToAllTest {
 
 
         // Page Class Code (POM Code) - 2 - L
-        LoginPage loginPage_VWO = new LoginPage(DriverManger.getDriver());
+        LoginPage loginPage_VWO = new LoginPage(DriverManager.getDriver());
         loginPage_VWO.loginToVWOLoginValidCreds(PropertiesReader.readKey("username"), PropertiesReader.readKey("password"));
 
-        DashBoardPage dashBoardPage = new DashBoardPage(DriverManger.getDriver());
+        DashBoardPage dashBoardPage = new DashBoardPage(DriverManager.getDriver());
         String usernameLoggedIn = dashBoardPage.loggedInUserName();
 
         assertThat(usernameLoggedIn).isNotBlank().isNotNull().isNotEmpty();
-        logger.info("Done the Test cases");
+        logger.info("Done the Test cases   -> testLoginPositiveVWO" );
         Assert.assertEquals(usernameLoggedIn, PropertiesReader.readKey("expected_username"));
 
 

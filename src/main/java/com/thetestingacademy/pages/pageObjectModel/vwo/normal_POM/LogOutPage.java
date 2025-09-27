@@ -22,12 +22,10 @@ public class LogOutPage {
 
     public String logoutUser() {
         WaitHelpers.waitJVM(2000);
-        driver.navigate().to("https://app.vwo.com/#/login");
         driver.findElement(userLogOut_drop).click();
-
+//
         WebElement logoutBtn = driver.findElement(logout_btn);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", logoutBtn);
-
 
         return driver.findElement(VerifyLogin_Page_Text).getText();
     }
