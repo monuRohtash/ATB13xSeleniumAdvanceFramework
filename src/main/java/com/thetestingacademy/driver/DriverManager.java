@@ -24,27 +24,53 @@ public class DriverManager {
 
     // Initialize WebDriver
     public static void initDriver() {
-        String browser = PropertiesReader.readKey("browser");
-        browser = browser.toLowerCase();
+        String browser = PropertiesReader.readKey("browser").toLowerCase();
+        String headlessProp = PropertiesReader.readKey("headless"); // add in properties
+        String incognitoProp = PropertiesReader.readKey("incognito"); // config.properties
+
+
+        boolean isHeadless = headlessProp != null && headlessProp.equalsIgnoreCase("true");
+        boolean isIncognito = incognitoProp != null && incognitoProp.equalsIgnoreCase("true");
+
 
         switch (browser) {
             case "edge":
                 EdgeOptions edgeOptions = new EdgeOptions();
                 edgeOptions.addArguments("--start-maximized");
                 edgeOptions.addArguments("--guest");
+                if (isHeadless) {
+                    edgeOptions.addArguments("--headless=new");
+                }
+                if (isIncognito) {
+                    edgeOptions.addArguments("--inprivate");
+                }
                 driver = new EdgeDriver(edgeOptions);
                 break;
 
             case "firefox":
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 firefoxOptions.addArguments("--Start-maximized");
+                if (isHeadless) {
+                    firefoxOptions.addArguments("--headless=new");
+                }
+                if (isIncognito){
+                    firefoxOptions.addArguments("-private");
+                }
                 driver = new FirefoxDriver(firefoxOptions);
                 break;
 
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--start-maximized");
+//                if (isHeadless) {
+//                    chromeOptions.addArguments("--headless=new");
+//                }
+
+                if (isIncognito){
+                    chromeOptions.addArguments("inprivate");
+                }
                 driver = new ChromeDriver(chromeOptions);
+
                 break;
             default:
                 System.out.println(" ❌ Browser not supported: " + browser);
