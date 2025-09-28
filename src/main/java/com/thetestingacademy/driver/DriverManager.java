@@ -62,9 +62,9 @@ public class DriverManager {
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--start-maximized");
-//                if (isHeadless) {
-//                    chromeOptions.addArguments("--headless=new");
-//                }
+                if (isHeadless) {
+                    chromeOptions.addArguments("--headless=new");
+                }
 
                 if (isIncognito){
                     chromeOptions.addArguments("inprivate");
@@ -74,11 +74,8 @@ public class DriverManager {
                 break;
             default:
                 System.out.println(" ❌ Browser not supported: " + browser);
-
         }
-
     }
-
 
     // Quit WebDriver
     public static void downDriver() {

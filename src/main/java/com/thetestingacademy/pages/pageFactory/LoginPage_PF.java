@@ -2,15 +2,11 @@ package com.thetestingacademy.pages.pageFactory;
 
 
 import com.thetestingacademy.base.CommonToAllPage;
-import com.thetestingacademy.utils.PropertiesReader;
 import com.thetestingacademy.utils.WaitHelpers;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import static com.thetestingacademy.driver.DriverManager.getDriver;
 
 public class LoginPage_PF extends CommonToAllPage {
 
