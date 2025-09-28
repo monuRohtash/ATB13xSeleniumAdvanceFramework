@@ -62,13 +62,13 @@ public class DriverManager {
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--start-maximized");
-                if (isHeadless) {
-                    chromeOptions.addArguments("--headless=new");
-                }
-
-                if (isIncognito){
-                    chromeOptions.addArguments("inprivate");
-                }
+//                if (isHeadless) {
+//                    chromeOptions.addArguments("--headless=new");
+//                }
+//
+//                if (isIncognito){
+//                    chromeOptions.addArguments("inprivate");
+//                }
                 driver = new ChromeDriver(chromeOptions);
 
                 break;

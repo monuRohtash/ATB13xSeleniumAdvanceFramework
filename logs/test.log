@@ -187,3 +187,7 @@
 2025-09-27 22:10:32 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model - test pass
 2025-09-27 22:10:37 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
 2025-09-27 22:10:47 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model - test pass
+2025-09-28 22:15:30 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-28 22:18:32 INFO  TestVWOLogin_PF - Starting the Testcases Page Factory = testLoginNegativeVWO_PF
+2025-09-28 22:18:53 INFO  TestVWOLogin_PF - Finished the Testcases Page Factory
+2025-09-28 22:18:54 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds

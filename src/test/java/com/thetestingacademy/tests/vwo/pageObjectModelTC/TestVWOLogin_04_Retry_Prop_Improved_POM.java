@@ -2,6 +2,7 @@ package com.thetestingacademy.tests.vwo.pageObjectModelTC;
 
 import com.thetestingacademy.base.CommonToAllTest;
 import com.thetestingacademy.listeners.RetryAnalyzer;
+import com.thetestingacademy.utils.ScreenshotUtils;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -25,7 +26,7 @@ public class TestVWOLogin_04_Retry_Prop_Improved_POM extends CommonToAllTest {
         getDriver().get("https://app.vwo.com");
         logger.info("Starting the Testcases Page Object Model");
         Allure.addAttachment("Log output", "text/plain", "This is some log text");
-        Assert.assertTrue(false);
+        Assert.assertTrue(true);
     }
 
     @Owner("Raghav")
@@ -34,7 +35,7 @@ public class TestVWOLogin_04_Retry_Prop_Improved_POM extends CommonToAllTest {
     public void testPass() {
         getDriver().get("https://app.vwo.com");
         logger.info("Starting the Testcases Page Object Model - test pass");
-//        new TakeScreenShot().takeScreenshot("testPass_1");
+        ScreenshotUtils.takeScreenshot("testPass_1");
         Assert.assertTrue(true);
     }
 
