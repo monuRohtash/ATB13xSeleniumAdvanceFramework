@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/home/raghav/IdeaProjects/ATB13xSeleniumAdvanceFramework/src/test/java/com/thetestingacademy/tests/vwo/pageObjectModelTC">
+        <classes>
+            <class name="com.thetestingacademy.tests.vwo.pageObjectModelTC.TestVWOLogin_02_Prop_POM">
+                <methods>
+                    <include name="test_negative_vwo_login"/>
+                    <include name="testLoginPositiveVWO"/>
+                </methods>
+            </class>
+            <class name="com.thetestingacademy.tests.vwo.pageObjectModelTC.TestVWOLogin_03_Prop_Improved_POM">
+                <methods>
+                    <include name="test_negative_vwo_login"/>
+                    <include name="testLoginPositiveVWO"/>
+                </methods>
+            </class>
+            <class name="com.thetestingacademy.tests.vwo.pageObjectModelTC.TestVWOLogin_04_Retry_Prop_Improved_POM">
+                <methods>
+                    <include name="testFail"/>
+                    <include name="testPass"/>
+                </methods>
+            </class>
+            <class name="com.thetestingacademy.tests.vwo.pageObjectModelTC.TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM">
+                <methods>
+                    <include name="testFail"/>
+                    <include name="testPass"/>
+                </methods>
+            </class>
+            <class name="com.thetestingacademy.tests.vwo.pageObjectModelTC.Test_VWOLogin_01_Normal_POM">
+                <methods>
+                    <include name="test_negative_vwo_login"/>
+                    <include name="testLoginPositiveVWO"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
