@@ -38,24 +38,24 @@ public class DriverManager {
                 EdgeOptions edgeOptions = new EdgeOptions();
                 edgeOptions.addArguments("--start-maximized");
                 edgeOptions.addArguments("--guest");
-                if (isHeadless) {
-                    edgeOptions.addArguments("--headless=new");
-                }
-                if (isIncognito) {
-                    edgeOptions.addArguments("--inprivate");
-                }
+//                if (isHeadless) {
+//                    edgeOptions.addArguments("--headless=new");
+//                }
+//                if (isIncognito) {
+//                    edgeOptions.addArguments("--inprivate");
+//                }
                 driver = new EdgeDriver(edgeOptions);
                 break;
 
             case "firefox":
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 firefoxOptions.addArguments("--Start-maximized");
-                if (isHeadless) {
-                    firefoxOptions.addArguments("--headless=new");
-                }
-                if (isIncognito){
-                    firefoxOptions.addArguments("-private");
-                }
+//                if (isHeadless) {
+//                    firefoxOptions.addArguments("--headless=new");
+//                }
+//                if (isIncognito){
+//                    firefoxOptions.addArguments("-private");
+//                }
                 driver = new FirefoxDriver(firefoxOptions);
                 break;
 

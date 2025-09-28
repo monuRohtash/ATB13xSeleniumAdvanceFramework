@@ -1,14 +1,16 @@
 package com.thetestingacademy.pages.pageFactory;
 
 import com.thetestingacademy.base.CommonToAllPage;
-import com.thetestingacademy.utils.PropertiesReader;
 import com.thetestingacademy.utils.WaitHelpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class DashBoardPage_PF extends CommonToAllPage {
 
@@ -28,7 +30,10 @@ public class DashBoardPage_PF extends CommonToAllPage {
 
     // Page Actions
     public String loggedInUserName() {
-        WaitHelpers.visibilityOfElement(userNameOnDashboard);
+
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//        return (WebElement) wait.until(ExpectedConditions.visibilityOfAllElements(userNameOnDashboard));
+        WaitHelpers.waitJVM(3000);
         return getText(userNameOnDashboard);
     }
 
