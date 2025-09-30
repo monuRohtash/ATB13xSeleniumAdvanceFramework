@@ -17,8 +17,6 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-
 
 
 @Listeners(ScreenshotListener.class)
@@ -58,19 +56,17 @@ public class TestVWOLogin_PF extends CommonToAllTest {
         LoginPage_PF loginPage_PF2 = new LoginPage_PF(DriverManager.getDriver());
         loginPage_PF2.loginToVWOLoginValidCreds_PF(PropertiesReader.readKey("username"), PropertiesReader.readKey("password"));
 
-        DashBoardPage_PF dashBoardPage = new DashBoardPage_PF(DriverManager.getDriver());
-        String usernameLoggedIn = dashBoardPage.loggedInUserName();
-
-        assertThat(usernameLoggedIn).isNotBlank().isNotNull().isNotEmpty();
+        DashBoardPage_PF dashBoardPage_pf = new DashBoardPage_PF(DriverManager.getDriver());
+        String usernameLoggedIn_pf = dashBoardPage_pf.loggedInUserName();
         logger.info("Page Factory Dashboard Page");
-        Assert.assertEquals(usernameLoggedIn, PropertiesReader.readKey("expected_username"));
-        ScreenshotUtils.takeScreenshot("Page Factory test 2");
+        Assert.assertEquals(usernameLoggedIn_pf, PropertiesReader.readKey("expected_username"));
+        ScreenshotUtils.takeScreenshot("Page Factory LogOutPageMSg ");
 
         // Logout page test
         LogOutPage_PF logOutPage_pf = new LogOutPage_PF(DriverManager.getDriver());
         String usernameLoggedOut = logOutPage_pf.logoutUser();
         logger.info("Page Factory Logout user ");
-        Assert.assertEquals(usernameLoggedOut,PropertiesReader.readKey("LogOutPageMSg") );
+        Assert.assertEquals(usernameLoggedOut, PropertiesReader.readKey("LogOutPageMSg"));
         ScreenshotUtils.takeScreenshot("Page Factory LogOutPageMSg 3");
 
 
