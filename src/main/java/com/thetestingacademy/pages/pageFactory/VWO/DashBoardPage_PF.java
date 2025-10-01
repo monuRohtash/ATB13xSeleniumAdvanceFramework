@@ -1,4 +1,4 @@
-package com.thetestingacademy.pages.pageFactory;
+package com.thetestingacademy.pages.pageFactory.VWO;
 
 import com.thetestingacademy.base.CommonToAllPage;
 

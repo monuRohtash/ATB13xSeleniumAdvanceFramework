@@ -20,9 +20,10 @@ public class DashBoardPage_Proper_Pom{
 
     public String loggedInUserName(){
         WaitHelpers.waitJVM(10000);
-        driver.get(PropertiesReader.readKey("Dash_url"));
-        return driver.findElement(userNameOnDashboard).getText();
+        return userNameOnDashboard.toString();
     }
 
 
 }
+
+

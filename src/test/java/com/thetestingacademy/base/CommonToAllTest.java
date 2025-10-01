@@ -8,7 +8,7 @@ public class CommonToAllTest {
 
 
     @BeforeMethod
-    public void setUo() {
+    public void setUp() {
         DriverManager.initDriver();
     }
 

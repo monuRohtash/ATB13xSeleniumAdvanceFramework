@@ -249,3 +249,24 @@
 2025-09-30 18:26:52 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds
 2025-09-30 18:27:16 INFO  TestVWOLogin_PF - Page Factory Dashboard Page
 2025-09-30 18:27:24 INFO  TestVWOLogin_PF - Page Factory Logout user 
+2025-09-30 18:43:23 INFO  TestVWOLogin_02_Prop_POM - Starting the test_negative_vwo_login
+2025-09-30 18:43:33 INFO  TestVWOLogin_02_Prop_POM - Asserting the invalid credentials
+2025-09-30 18:43:35 INFO  TestVWOLogin_02_Prop_POM - Starting the testLoginPositiveVWO
+2025-09-30 18:43:57 INFO  TestVWOLogin_02_Prop_POM - Done the Test cases
+2025-09-30 18:43:57 INFO  TestVWOLogin_02_Prop_POM - click on logout button
+2025-09-30 18:44:00 INFO  TestVWOLogin_02_Prop_POM - Sign in to VWO platform 
+2025-09-30 18:44:01 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the testLoginPositiveVWO
+2025-09-30 18:44:11 INFO  TestVWOLogin_03_Prop_Improved_POM - Asserting the invalid credentials
+2025-09-30 18:44:12 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-30 18:44:58 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-30 18:45:08 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model - test pass
+2025-09-30 18:45:19 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-30 18:45:28 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model - test pass
+2025-09-30 18:46:08 INFO  Test_VWOLogin_01_Normal_POM - click on logout button
+2025-09-30 18:46:11 INFO  Test_VWOLogin_01_Normal_POM - Sign in to VWO platform 
+2025-09-30 19:03:48 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-09-30 19:04:05 INFO  TestVWOLogin_03_Prop_Improved_POM - Done the Test cases   -> testLoginPositiveVWO
+2025-10-01 12:44:27 INFO  TestVWOLogin_PF - Starting the Testcases Page Factory = testLoginNegativeVWO_PF
+2025-10-01 12:46:53 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds
+2025-10-01 12:47:18 INFO  TestVWOLogin_PF - Page Factory Dashboard Page
+2025-10-01 12:47:26 INFO  TestVWOLogin_PF - Page Factory Logout user 

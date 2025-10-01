@@ -16,8 +16,14 @@ public class CommonToAllPage {
     }
 
     public void openOrangeHRMUrl(){
-        getDriver().get(PropertiesReader.readKey("ohr_url"));
+        getDriver().get(PropertiesReader.readKey("Hrm"));
     }
+
+    public void openIDriveUrl(){
+        getDriver().get(PropertiesReader.readKey("idrive_url"));
+    }
+
+
 
     public void openKatalonUrl(){
         getDriver().get(PropertiesReader.readKey("katalon_url"));
@@ -45,7 +51,5 @@ public class CommonToAllPage {
     public String getText(WebElement by){
         return by.getText();
     }
-
-
 
 }

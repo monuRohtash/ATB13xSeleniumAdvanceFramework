@@ -1,9 +1,7 @@
-package com.thetestingacademy.pages.pageFactory;
+package com.thetestingacademy.pages.pageFactory.VWO;
 
 import com.thetestingacademy.base.CommonToAllPage;
 import com.thetestingacademy.utils.WaitHelpers;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

@@ -4,9 +4,9 @@ import com.thetestingacademy.base.CommonToAllTest;
 import com.thetestingacademy.driver.DriverManager;
 import com.thetestingacademy.listeners.RetryAnalyzer;
 import com.thetestingacademy.listeners.ScreenshotListener;
-import com.thetestingacademy.pages.pageFactory.DashBoardPage_PF;
-import com.thetestingacademy.pages.pageFactory.LogOutPage_PF;
-import com.thetestingacademy.pages.pageFactory.LoginPage_PF;
+import com.thetestingacademy.pages.pageFactory.VWO.DashBoardPage_PF;
+import com.thetestingacademy.pages.pageFactory.VWO.LogOutPage_PF;
+import com.thetestingacademy.pages.pageFactory.VWO.LoginPage_PF;
 import com.thetestingacademy.utils.PropertiesReader;
 import com.thetestingacademy.utils.ScreenshotUtils;
 import io.qameta.allure.Description;
@@ -58,6 +58,7 @@ public class TestVWOLogin_PF extends CommonToAllTest {
 
         DashBoardPage_PF dashBoardPage_pf = new DashBoardPage_PF(DriverManager.getDriver());
         String usernameLoggedIn_pf = dashBoardPage_pf.loggedInUserName();
+
         logger.info("Page Factory Dashboard Page");
         Assert.assertEquals(usernameLoggedIn_pf, PropertiesReader.readKey("expected_username"));
         ScreenshotUtils.takeScreenshot("Page Factory LogOutPageMSg ");

@@ -26,7 +26,7 @@ public class TestVWOLogin_04_Retry_Prop_Improved_POM extends CommonToAllTest {
         getDriver().get("https://app.vwo.com");
         logger.info("Starting the Testcases Page Object Model");
         Allure.addAttachment("Log output", "text/plain", "This is some log text");
-        Assert.assertTrue(true);
+        Assert.assertTrue(false);
     }
 
     @Owner("Raghav")

@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 import static com.thetestingacademy.driver.DriverManager.getDriver;
 
-public class LoginPage extends CommonToAllPage {
+public class LoginPage_imp_pom extends CommonToAllPage {
 
     //  WebDriver
     // Page Class
@@ -16,7 +16,7 @@ public class LoginPage extends CommonToAllPage {
 
     WebDriver driver;
 
-    public LoginPage(WebDriver driver) {
+    public LoginPage_imp_pom(WebDriver driver) {
         this.driver = driver;
     }
 

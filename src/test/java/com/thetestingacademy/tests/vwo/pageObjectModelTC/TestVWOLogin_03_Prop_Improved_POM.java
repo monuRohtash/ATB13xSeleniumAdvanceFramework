@@ -2,8 +2,9 @@ package com.thetestingacademy.tests.vwo.pageObjectModelTC;
 
 import com.thetestingacademy.base.CommonToAllTest;
 import com.thetestingacademy.driver.DriverManager;
-import com.thetestingacademy.pages.pageObjectModel.vwo.improved_POM.DashBoardPage;
-import com.thetestingacademy.pages.pageObjectModel.vwo.improved_POM.LoginPage;
+import com.thetestingacademy.pages.pageObjectModel.vwo.Prop_POM.DashBoardPage_Proper_Pom;
+import com.thetestingacademy.pages.pageObjectModel.vwo.improved_POM.DashBoardPage_imp_pom;
+import com.thetestingacademy.pages.pageObjectModel.vwo.improved_POM.LoginPage_imp_pom;
 import com.thetestingacademy.utils.PropertiesReader;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -31,7 +32,7 @@ public class TestVWOLogin_03_Prop_Improved_POM  extends CommonToAllTest {
         logger.info("Starting the testLoginPositiveVWO");
 
         // Page Class Code (POM Code) - 2 - L
-        LoginPage loginPage = new LoginPage(DriverManager.getDriver());
+        LoginPage_imp_pom loginPage = new LoginPage_imp_pom(DriverManager.getDriver());
         String error_msg = loginPage.loginToVWOLoginInvalidCreds(PropertiesReader.readKey("invalid_username"), PropertiesReader.readKey("invalid_password"));
 
         // Assertions - 3 - V
@@ -53,11 +54,11 @@ public class TestVWOLogin_03_Prop_Improved_POM  extends CommonToAllTest {
 
 
         // Page Class Code (POM Code) - 2 - L
-        LoginPage loginPage_VWO = new LoginPage(DriverManager.getDriver());
+        LoginPage_imp_pom loginPage_VWO = new LoginPage_imp_pom(DriverManager.getDriver());
         loginPage_VWO.loginToVWOLoginValidCreds(PropertiesReader.readKey("username"), PropertiesReader.readKey("password"));
 
-        DashBoardPage dashBoardPage = new DashBoardPage(DriverManager.getDriver());
-        String usernameLoggedIn = dashBoardPage.loggedInUserName();
+        DashBoardPage_imp_pom dashBoardPage_imp_pom  = new DashBoardPage_imp_pom(DriverManager.getDriver());
+        String usernameLoggedIn = dashBoardPage_imp_pom.loggedInUserName_1();
 
         assertThat(usernameLoggedIn).isNotBlank().isNotNull().isNotEmpty();
         logger.info("Done the Test cases   -> testLoginPositiveVWO" );

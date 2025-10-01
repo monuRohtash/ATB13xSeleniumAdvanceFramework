@@ -1,4 +1,4 @@
-package com.thetestingacademy.pages.pageFactory;
+package com.thetestingacademy.pages.pageFactory.VWO;
 
 
 import com.thetestingacademy.base.CommonToAllPage;
@@ -7,6 +7,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
+import static com.thetestingacademy.driver.DriverManager.getDriver;
 
 public class LoginPage_PF extends CommonToAllPage {
 
@@ -41,12 +47,18 @@ public class LoginPage_PF extends CommonToAllPage {
     // Page Actions
 
     public String loginToVWOLoginInvalidCreds_PF(String user, String pwd) {
+
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+
         openVWOUrl();
         enterInput(username,user);
         enterInput(password,pwd);
         clickElement(signButton);
-        WaitHelpers.waitJVM(5000);
-//        WaitHelpers.checkVisibility(getDriver(),error_message);
+
+
+        // ✅ Explicit wait for error message to appear
+        wait.until(ExpectedConditions.visibilityOf(error_message));
+
         return getText(error_message);
     }
 
