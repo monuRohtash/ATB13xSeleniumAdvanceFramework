@@ -1,4 +1,35 @@
 package com.thetestingacademy.pages.pageFactory.OHRM;
 
-public class DashBoardPage_PF_Ohr {
+import com.thetestingacademy.base.CommonToAllPage;
+import net.bytebuddy.implementation.bind.annotation.Super;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
+public class DashBoardPage_PF_Ohr extends CommonToAllPage {
+
+    WebDriver driver;
+
+    public DashBoardPage_PF_Ohr(WebDriver driver) {
+        super();
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
+
+    // Locators
+    @FindBy(xpath = "//h6[text()=\"Dashboard\"]")
+    private WebElement dashboardHeader;
+
+
+
+//     // ✅ Verify Dashboard is Visible
+    public String dislpayDashboard() {
+        return getText(dashboardHeader);
+    }
+
 }

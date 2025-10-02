@@ -28,7 +28,7 @@ public class DashBoardPage_PF extends CommonToAllPage {
     // Page Actions
     public String loggedInUserName() {
         WaitHelpers.waitJVM(10000);
-        return (userNameOnDashboard_pf).getText();
+        return getText(userNameOnDashboard_pf);
 
     }
 

@@ -7,13 +7,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LogOutPage_PF  extends CommonToAllPage {
+public class LogOutPage_PF extends CommonToAllPage {
 
     WebDriver driver;
 
     public LogOutPage_PF(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
 
     }
 
@@ -33,11 +33,9 @@ public class LogOutPage_PF  extends CommonToAllPage {
 
 
     public String logoutUser() {
-        WaitHelpers.waitJVM(2000);
+
         clickElement(userLogOut_drop);
-//
         clickElement(logout_btn);
-        WaitHelpers.waitJVM(5000);
         return (VerifyLogin_Page_Text).getText();
 
 
@@ -45,9 +43,6 @@ public class LogOutPage_PF  extends CommonToAllPage {
 
 
     }
-
-
-
 
 
 }

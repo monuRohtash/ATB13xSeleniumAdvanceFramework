@@ -60,7 +60,7 @@ public class TestVWOLogin_PF extends CommonToAllTest {
         String usernameLoggedIn_pf = dashBoardPage_pf.loggedInUserName();
 
         logger.info("Page Factory Dashboard Page");
-        Assert.assertEquals(usernameLoggedIn_pf, PropertiesReader.readKey("expected_username"));
+        Assert.assertEquals(usernameLoggedIn_pf, PropertiesReader.readKey("expected_username")  );
         ScreenshotUtils.takeScreenshot("Page Factory LogOutPageMSg ");
 
         // Logout page test

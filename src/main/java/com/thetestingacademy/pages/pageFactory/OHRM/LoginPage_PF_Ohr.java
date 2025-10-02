@@ -6,22 +6,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
-
-import static com.thetestingacademy.driver.DriverManager.getDriver;
 
 public class LoginPage_PF_Ohr extends CommonToAllPage {
 
     WebDriver driver;
     // Constructor
     public LoginPage_PF_Ohr(WebDriver driver) {
+        super();                   // CommonToAllPage का constructor call होगा (waits included)
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
 
+    // Locators
     @FindBy(css = "input[placeholder='Username']")
     private WebElement usernameInput;
 
@@ -35,37 +32,24 @@ public class LoginPage_PF_Ohr extends CommonToAllPage {
     private WebElement error_msg;
 
 
-    WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
 
-
-    // Actions / Methods
+    // Invalid Login
     public String loginInValid_Hrm(String user , String pwd){
-        openOrangeHRMUrl();
-
-//        wait.until(ExpectedConditions.visibilityOf(usernameInput));
-//        wait.until(ExpectedConditions.visibilityOf(passwordInput));
-//        wait.until(ExpectedConditions.visibilityOf(loginButton));
-
-
-        enterInput(usernameInput,user);
-        enterInput(passwordInput,pwd);
+        openOrangeHRMUrl();                 // URL open
+        enterInput(usernameInput, user);    // CommonToAllPage helper
+        enterInput(passwordInput, pwd);
         clickElement(loginButton);
 
-        wait.until(ExpectedConditions.visibilityOf(error_msg));
-        return getText(error_msg);
+        return getText(error_msg);           // Wait + getText
+    }
 
-        }
-
-    public void LoginToHrmValidCreds_PF(String user, String pwd){
-
-
-        openOrangeHRMUrl();
-        wait.until(ExpectedConditions.visibilityOf(usernameInput));
-        wait.until(ExpectedConditions.visibilityOf(passwordInput));
-
-        enterInput(usernameInput,user);
-        enterInput(passwordInput,pwd);
+    // Valid Login
+    public void loginValid_Hrm(String user, String pwd){
+        openOrangeHRMUrl();                 // URL open
+        enterInput(usernameInput, user);    // CommonToAllPage helper
+        enterInput(passwordInput, pwd);
         clickElement(loginButton);
     }
+
 
 }
