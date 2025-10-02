@@ -53,15 +53,15 @@ public class DriverManager {
                 if (isHeadless) {
                     firefoxOptions.addArguments("--headless=new");
                 }
-                if (isIncognito) {
+                if (isIncognito){
                     firefoxOptions.addArguments("-private");
                 }
                 driver = new FirefoxDriver(firefoxOptions);
                 break;
 
             case "chrome":
-                ChromeOptions options = new ChromeOptions();
-//                options.addArguments("--start-maximized");
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--start-maximized");
 //                if (isHeadless) {
 //                    chromeOptions.addArguments("--headless=new");
 //                }
@@ -69,23 +69,7 @@ public class DriverManager {
 //                if (isIncognito){
 //                    chromeOptions.addArguments("inprivate");
 //                }
-
-                // Jenkins/Linux friendly settings
-                options.addArguments("--headless"); // GUI नहीं खुलेगा
-                options.addArguments("--disable-gpu"); // headless के साथ compatibility
-                options.addArguments("--window-size=1920,1080"); // window size set
-                options.addArguments("--no-sandbox"); // Linux में permissions issue रोकने के लिए
-                options.addArguments("--disable-dev-shm-usage"); // Linux Docker/Jenkins memory issue रोकने के लिए
-                options.addArguments("--start-maximized");
-
-                // हर session के लिए unique user data directory
-                options.addArguments("--user-data-dir=/tmp/unique-chrome-profile-" + System.currentTimeMillis());
-
-                // Chrome binary path (Linux में जरूरी हो सकता है)
-                options.setBinary("/usr/bin/google-chrome");
-
-
-                driver = new ChromeDriver(options);
+                driver = new ChromeDriver(chromeOptions);
 
                 break;
             default:
