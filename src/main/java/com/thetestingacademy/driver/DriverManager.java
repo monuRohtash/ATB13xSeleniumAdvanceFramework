@@ -60,8 +60,8 @@ public class DriverManager {
                 break;
 
             case "chrome":
-                ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--start-maximized");
+                ChromeOptions options = new ChromeOptions();
+                // chromeOptions.addArguments("--start-maximized");
 //                if (isHeadless) {
 //                    chromeOptions.addArguments("--headless=new");
 //                }
@@ -83,7 +83,7 @@ public class DriverManager {
         // Chrome binary path (Linux में जरूरी हो सकता है)
         options.setBinary("/usr/bin/google-chrome");
                 
-                driver = new ChromeDriver(chromeOptions);
+                driver = new ChromeDriver(options);
 
                 break;
             default:
