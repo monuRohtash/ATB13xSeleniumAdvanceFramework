@@ -70,6 +70,12 @@ public class TestOHRM_Login_PF extends CommonToAllTest {
         Allure.step("Verify login page visible after logout");
         Assert.assertEquals(loinPage, "Login", "test pass login to logout user ");
         ScreenshotUtils.takeScreenshot("After Logout");
+        Allure.step("Verify tha logout page");
+        Allure.step("Verify tha logout page");
+        Allure.step("Verify tha logout page");
+        Allure.step("Verify tha logout page");
+        Allure.step("Verify tha logout page");
+
 
     }
 

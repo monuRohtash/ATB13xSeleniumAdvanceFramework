@@ -313,3 +313,5 @@
 2025-10-03 18:10:51 INFO  TestVWOLogin_04_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model - test pass
 2025-10-03 18:11:21 INFO  TestVWOLogin_03_Prop_Improved_POM - Starting the testLoginPositiveVWO
 2025-10-03 18:11:31 INFO  TestVWOLogin_03_Prop_Improved_POM - Asserting the invalid credentials
+2025-10-03 18:22:30 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model
+2025-10-03 18:22:42 INFO  TestVWOLogin_05_TakeScreen_Retry_Prop_Improved_POM - Starting the Testcases Page Object Model - test pass
