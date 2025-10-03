@@ -12,7 +12,7 @@ import java.time.Duration;
 
 public class testidrive {
 
- @Test
+    @Test
     public void test1() {
 
         WebDriver driver;
@@ -20,18 +20,16 @@ public class testidrive {
         driver.get("https://www.idrive360.com/enterprise/login");
         driver.getTitle();
 
-     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-     WebElement user = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
-     user.sendKeys("jekovokida@mailinator.com");
+        WebElement user = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
+        user.sendKeys("jekovokida@mailinator.com");
 
-     WebElement pass = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password")));
-     pass.sendKeys("Raghav@123");
+        WebElement pass = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password")));
+        pass.sendKeys("Raghav@123");
 
-     WebElement Btn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@type=\"submit\"]")));
-     Btn.click();
-
-
+        WebElement Btn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@type=\"submit\"]")));
+        Btn.click();
 
 
     }

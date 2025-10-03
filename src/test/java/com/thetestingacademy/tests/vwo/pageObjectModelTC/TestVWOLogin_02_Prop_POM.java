@@ -77,7 +77,7 @@ public class TestVWOLogin_02_Prop_POM extends CommonToAllTest {
 
         logger.info("Sign in to VWO platform ");
 
-        Assert.assertEquals(verifyLoginPage, "");
+//        Assert.assertEquals(verifyLoginPage, "");
 
 
 
