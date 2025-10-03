@@ -30,7 +30,6 @@ public class DataDrivenTesting extends CommonToAllTest {
         String error_msg = loginPage.loginToVWOLoginInvalidCreds(email, password);
 
         // Assertions - 3 - V
-
         logger.info("Asserting the Invalid credentials");
         ScreenshotUtils.takeScreenshot("data driven login page");
         assertThat(error_msg).isNotNull().isNotBlank().isNotEmpty();
