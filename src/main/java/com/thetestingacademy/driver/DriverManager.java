@@ -81,7 +81,7 @@ public class DriverManager {
         options.addArguments("--user-data-dir=/tmp/unique-chrome-profile-" + System.currentTimeMillis());
 //
 //        // Chrome binary path (Linux में जरूरी हो सकता है)
-//        options.setBinary("/usr/bin/google-chrome");
+        options.setBinary("/usr/bin/google-chrome");
                 
                 driver = new ChromeDriver(options);
 
