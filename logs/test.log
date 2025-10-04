@@ -335,3 +335,11 @@
 2025-10-03 18:54:33 INFO  DataDrivenTesting - Asserting the Invalid credentials
 2025-10-03 18:54:47 INFO  DataDrivenTesting - Asserting the Invalid credentials
 2025-10-03 18:55:00 INFO  DataDrivenTesting - Asserting the Invalid credentials
+2025-10-04 14:29:27 INFO  TestOHRM_Login_PF - Start tha loginPage verifying negativa test case  in  HRM Side 
+2025-10-04 14:29:37 INFO  TestOHRM_Login_PF - Start tha loginPage verifying positive test case  in  HRM Side 
+2025-10-04 14:29:44 INFO  TestOHRM_Login_PF - Start tha loginPage > Dashboard page verifying positive test case  in  HRM Side 
+2025-10-04 14:29:45 INFO  TestOHRM_Login_PF - Start tha Logout Page verifying positive test case  in  HRM Side 
+2025-10-04 14:30:05 INFO  TestOHRM_Login_PF - Start tha loginPage verifying negativa test case  in  HRM Side 
+2025-10-04 14:30:14 INFO  TestOHRM_Login_PF - Start tha loginPage verifying positive test case  in  HRM Side 
+2025-10-04 14:30:22 INFO  TestOHRM_Login_PF - Start tha loginPage > Dashboard page verifying positive test case  in  HRM Side 
+2025-10-04 14:30:23 INFO  TestOHRM_Login_PF - Start tha Logout Page verifying positive test case  in  HRM Side 

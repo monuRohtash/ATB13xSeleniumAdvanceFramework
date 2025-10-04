@@ -78,7 +78,7 @@ public class DriverManager {
 //        options.addArguments("--start-maximized");
 //
 //        // हर session के लिए unique user data directory
-//        options.addArguments("--user-data-dir=/tmp/unique-chrome-profile-" + System.currentTimeMillis());
+        options.addArguments("--user-data-dir=/tmp/unique-chrome-profile-" + System.currentTimeMillis());
 //
 //        // Chrome binary path (Linux में जरूरी हो सकता है)
 //        options.setBinary("/usr/bin/google-chrome");
