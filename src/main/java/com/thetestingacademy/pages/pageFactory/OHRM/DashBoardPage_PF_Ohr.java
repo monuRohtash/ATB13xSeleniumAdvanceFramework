@@ -1,6 +1,7 @@
 package com.thetestingacademy.pages.pageFactory.OHRM;
 
 import com.thetestingacademy.base.CommonToAllPage;
+import com.thetestingacademy.utils.WaitHelpers;
 import net.bytebuddy.implementation.bind.annotation.Super;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,6 +30,7 @@ public class DashBoardPage_PF_Ohr extends CommonToAllPage {
 
 //     // ✅ Verify Dashboard is Visible
     public String dislpayDashboard() {
+
         return getText(dashboardHeader);
     }
 
