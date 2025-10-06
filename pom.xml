@@ -108,7 +108,7 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>Smoke.xml</suiteXmlFile>
                         <!-- Variable for TestNG XML -->
-                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+<!--                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>-->
                         <!-- आप multiple XML भी add कर सकते हैं -->
                         <!--
                         <suiteXmlFile>Regression.xml</suiteXmlFile>
