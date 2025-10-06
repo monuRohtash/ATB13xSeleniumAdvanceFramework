@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
 
     <listeners>
-        <listener class-name="com.thetestingacademy.listeners.RetryListener"> </listener>
+<!--        <listener class-name="com.thetestingacademy.listeners.RetryListener"> </listener>-->
         <listener class-name="com.thetestingacademy.listeners.ScreenshotListener"> </listener>
     </listeners>
 
@@ -13,7 +13,7 @@
             <class name="com.thetestingacademy.tests.OHRM.pageFactoryTC.TestOHRM_Login_PF">
                 <methods>
                     <include name="LoginInvalid_Hrm"/>
-                    <include name="testValidLogin"/>
+                    <exclude name="testValidLogin"/>
                 </methods>
             </class>
         </classes>

@@ -386,3 +386,17 @@
 2025-10-06 19:51:07 INFO  TestOHRM_Login_PF - Start tha loginPage > Dashboard page verifying positive test case  in  HRM Side 
 2025-10-06 19:51:16 INFO  TestOHRM_Login_PF - Start tha Logout Page verifying positive test case  in  HRM Side 
 2025-10-06 19:51:26 INFO  TestOHRM_Login_PF - Start tha loginPage verifying negativa test case  in  HRM Side 
+2025-10-06 19:52:30 INFO  TestOHRM_Login_PF - Start tha loginPage verifying negativa test case  in  HRM Side 
+2025-10-06 19:53:33 INFO  TestOHRM_Login_PF - Start tha loginPage verifying negativa test case  in  HRM Side 
+2025-10-06 19:54:37 INFO  TestOHRM_Login_PF - Start tha loginPage verifying positive test case  in  HRM Side 
+2025-10-06 19:55:43 INFO  TestOHRM_Login_PF - Start tha loginPage > Dashboard page verifying positive test case  in  HRM Side 
+2025-10-06 19:55:53 INFO  TestOHRM_Login_PF - Start tha Logout Page verifying positive test case  in  HRM Side 
+2025-10-06 19:59:59 INFO  TestOHRM_Login_PF - Start tha loginPage verifying negativa test case  in  HRM Side 
+2025-10-06 20:01:01 INFO  TestOHRM_Login_PF - Start tha loginPage verifying negativa test case  in  HRM Side 
+2025-10-06 20:01:34 INFO  TestOHRM_Login_PF - Start tha loginPage verifying negativa test case  in  HRM Side 
+2025-10-06 20:03:16 INFO  TestOHRM_Login_PF - Start tha loginPage verifying negativa test case  in  HRM Side 
+2025-10-06 20:05:43 INFO  TestOHRM_Login_PF - Start tha loginPage verifying negativa test case  in  HRM Side 
+2025-10-06 20:06:48 INFO  TestVWOLogin_02_Prop_POM - Starting the testLoginPositiveVWO
+2025-10-06 20:07:07 INFO  TestVWOLogin_02_Prop_POM - Done the Test cases
+2025-10-06 20:07:07 INFO  TestVWOLogin_02_Prop_POM - Starting the test_negative_vwo_login
+2025-10-06 20:07:16 INFO  TestVWOLogin_02_Prop_POM - Asserting the invalid credentials
