@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 public class DashBoardPage_Proper_Pom{
 
 
-
     WebDriver driver;
 
     public DashBoardPage_Proper_Pom(WebDriver driver) {
