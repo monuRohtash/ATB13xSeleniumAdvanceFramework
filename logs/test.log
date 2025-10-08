@@ -400,3 +400,42 @@
 2025-10-06 20:07:07 INFO  TestVWOLogin_02_Prop_POM - Done the Test cases
 2025-10-06 20:07:07 INFO  TestVWOLogin_02_Prop_POM - Starting the test_negative_vwo_login
 2025-10-06 20:07:16 INFO  TestVWOLogin_02_Prop_POM - Asserting the invalid credentials
+2025-10-07 18:57:09 INFO  TestVWOLogin_PF - Starting the Testcases Page Factory = testLoginNegativeVWO_PF
+2025-10-07 18:57:24 INFO  TestVWOLogin_PF - Finished the Testcases Page Factory
+2025-10-07 18:57:25 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds
+2025-10-07 18:57:52 INFO  TestVWOLogin_PF - Page Factory Dashboard Page
+2025-10-07 18:57:53 INFO  TestVWOLogin_PF - Page Factory Logout user 
+2025-10-07 19:00:11 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds
+2025-10-07 19:00:41 INFO  TestVWOLogin_PF - Page Factory Dashboard Page
+2025-10-07 19:00:42 INFO  TestVWOLogin_PF - Page Factory Logout user 
+2025-10-07 19:05:18 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds
+2025-10-07 19:07:15 INFO  TestVWOLogin_PF - Starting the Testcases Page Factory = testLoginNegativeVWO_PF
+2025-10-07 19:07:27 INFO  TestVWOLogin_PF - Finished the Testcases Page Factory
+2025-10-07 19:07:29 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds
+2025-10-07 19:07:49 INFO  TestVWOLogin_PF - Page Factory Dashboard Page
+2025-10-07 19:09:14 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds
+2025-10-07 19:09:35 INFO  TestVWOLogin_PF - Page Factory Dashboard Page
+2025-10-07 19:11:49 INFO  TestVWOLogin_PF - Starting the Testcases Page Factory = testLoginNegativeVWO_PF
+2025-10-07 19:12:04 INFO  TestVWOLogin_PF - Finished the Testcases Page Factory
+2025-10-07 19:12:06 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds
+2025-10-07 19:12:30 INFO  TestVWOLogin_PF - Page Factory Dashboard Page
+2025-10-08 15:37:54 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds
+2025-10-08 15:38:24 INFO  TestVWOLogin_PF - Page Factory Dashboard Page
+2025-10-08 15:38:25 INFO  TestVWOLogin_PF - Page Factory Logout user 
+2025-10-08 15:39:24 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds
+2025-10-08 15:39:57 INFO  TestVWOLogin_PF - Page Factory Dashboard Page
+2025-10-08 15:39:58 INFO  TestVWOLogin_PF - Page Factory Logout user 
+2025-10-08 15:40:33 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds
+2025-10-08 15:41:01 INFO  TestVWOLogin_PF - Page Factory Dashboard Page
+2025-10-08 15:41:05 INFO  TestVWOLogin_PF - Page Factory Logout user 
+2025-10-08 15:41:50 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds
+2025-10-08 15:42:21 INFO  TestVWOLogin_PF - Page Factory Dashboard Page
+2025-10-08 15:42:28 INFO  TestVWOLogin_PF - Page Factory Logout user 
+2025-10-08 15:43:18 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds
+2025-10-08 15:43:51 INFO  TestVWOLogin_PF - Page Factory Dashboard Page
+2025-10-08 15:43:57 INFO  TestVWOLogin_PF - Page Factory Logout user 
+2025-10-08 15:56:56 INFO  TestVWOLogin_PF - Starting the Testcases Page Factory = testLoginNegativeVWO_PF
+2025-10-08 15:57:13 INFO  TestVWOLogin_PF - Finished the Testcases Page Factory
+2025-10-08 15:57:15 INFO  TestVWOLogin_PF - Starting the Testcases Page factory = loginToVWOLoginValidCreds
+2025-10-08 15:57:45 INFO  TestVWOLogin_PF - Page Factory Dashboard Page
+2025-10-08 15:57:49 INFO  TestVWOLogin_PF - Page Factory Logout user 

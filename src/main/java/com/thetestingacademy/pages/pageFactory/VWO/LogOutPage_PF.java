@@ -33,12 +33,9 @@ public class LogOutPage_PF extends CommonToAllPage {
 
 
     public String logoutUser() {
-
         clickElement(userLogOut_drop);
         clickElement(logout_btn);
-        return (VerifyLogin_Page_Text).getText();
-
-
+        return getText(VerifyLogin_Page_Text);
         // Wait - Thread sleep
 
 

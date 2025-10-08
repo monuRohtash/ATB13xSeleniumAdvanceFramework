@@ -70,7 +70,6 @@ public class TestVWOLogin_PF extends CommonToAllTest {
         Assert.assertEquals(usernameLoggedOut, PropertiesReader.readKey("LogOutPageMSg"));
         ScreenshotUtils.takeScreenshot("Page Factory LogOutPageMSg 3");
 
-
     }
 
 }
