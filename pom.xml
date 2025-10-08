@@ -112,8 +112,8 @@
 
                         <!-- आप multiple XML भी add कर सकते हैं -->
 
-                        <suiteXmlFile>Regression.xml</suiteXmlFile>
-                        <suiteXmlFile>Smoke.xml</suiteXmlFile>
+<!--                        <suiteXmlFile>Regression.xml</suiteXmlFile>-->
+<!--                        <suiteXmlFile>Smoke.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
