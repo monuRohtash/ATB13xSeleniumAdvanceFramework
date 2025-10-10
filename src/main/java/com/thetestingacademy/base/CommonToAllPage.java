@@ -19,7 +19,7 @@ public class CommonToAllPage {
 
     public CommonToAllPage() {
         this.driver = getDriver();
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15)); // default wait
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // default wait
     }
 
     // ================== Open URLs ==================

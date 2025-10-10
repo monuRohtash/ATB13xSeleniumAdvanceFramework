@@ -14,7 +14,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-
 public class TestIdrive360Login_PF extends CommonToAllTest {
 
     private static final Logger log = LogManager.getLogger(TestIdrive360Login_PF.class);
@@ -67,11 +66,7 @@ public class TestIdrive360Login_PF extends CommonToAllTest {
         log.info("Dashboard verified successfully.");
 
 
-
-
     }
-
-
 
 
 }
