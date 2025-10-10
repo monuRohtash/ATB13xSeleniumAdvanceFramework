@@ -1,6 +1,7 @@
 package com.thetestingacademy.pages.pageFactory.IDrive360;
 
 import com.thetestingacademy.base.CommonToAllPage;
+import com.thetestingacademy.utils.WaitHelpers;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,6 +25,7 @@ public class DashBoardPage_PF_IDRIVE extends CommonToAllPage {
 
     public boolean isDashboardDisplayed() {
 
+        WaitHelpers.waitJVM(3000);
         return isDisplayed(dashboardTitle);
 
     }

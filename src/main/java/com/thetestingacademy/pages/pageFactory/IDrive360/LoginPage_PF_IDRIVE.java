@@ -49,14 +49,14 @@ public class LoginPage_PF_IDRIVE extends CommonToAllPage {
 
     public String idriveINvalidLogin(String email, String password){
 
-//        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15));
 
         openIDriveUrl();
         enterInput(emailInput,email);
         enterInput(passwordInput,password);
         clickElement(signingBTN);
         // ✅ Explicit wait for error message to appear
-//        wait.until(ExpectedConditions.visibilityOf(error_msg));
+        wait.until(ExpectedConditions.visibilityOf(error_msg));
         return getText(error_msg);
 
     }
