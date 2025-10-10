@@ -17,7 +17,7 @@ public class DashBoardPage_PF_Ohr extends CommonToAllPage {
     WebDriver driver;
 
     public DashBoardPage_PF_Ohr(WebDriver driver) {
-        super();
+        super();                         // CommonToAllPage का constructor call होगा (waits included)
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

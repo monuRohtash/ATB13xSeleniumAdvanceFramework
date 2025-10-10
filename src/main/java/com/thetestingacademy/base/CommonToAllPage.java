@@ -19,7 +19,7 @@ public class CommonToAllPage {
 
     public CommonToAllPage() {
         this.driver = getDriver();
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // default wait
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15)); // default wait
     }
 
     // ================== Open URLs ==================
@@ -74,7 +74,7 @@ public class CommonToAllPage {
         return ele.getText();
     }
 
-    // ================== Get Text Logged In UserName ==================
+    // ================== Is Displayed ==================
     public boolean isDisplayed(WebElement element) {
         WebElement ele = wait.until(ExpectedConditions.visibilityOf(element));
         return ele.isDisplayed();
@@ -84,8 +84,6 @@ public class CommonToAllPage {
         WebElement ele = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
         return ele.isDisplayed();
     }
-
-
 
 
 }

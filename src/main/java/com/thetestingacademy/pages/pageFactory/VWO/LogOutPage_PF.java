@@ -2,6 +2,7 @@ package com.thetestingacademy.pages.pageFactory.VWO;
 
 import com.thetestingacademy.base.CommonToAllPage;
 import com.thetestingacademy.utils.WaitHelpers;
+import net.bytebuddy.implementation.bind.annotation.Super;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +13,7 @@ public class LogOutPage_PF extends CommonToAllPage {
     WebDriver driver;
 
     public LogOutPage_PF(WebDriver driver) {
+        super();                   // CommonToAllPage का constructor call होगा (waits included)
         this.driver = driver;
         PageFactory.initElements(driver, this);
 
