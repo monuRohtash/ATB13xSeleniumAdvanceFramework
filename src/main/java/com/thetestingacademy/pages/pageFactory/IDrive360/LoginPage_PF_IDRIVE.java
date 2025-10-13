@@ -7,21 +7,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
-
-import static com.thetestingacademy.driver.DriverManager.getDriver;
 
 public class LoginPage_PF_IDRIVE extends CommonToAllPage {
+
+    WebDriver driver;
 
     public LoginPage_PF_IDRIVE(WebDriver driver) {
         super();              // CommonToAllPage का constructor call होगा (waits included)
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    WebDriver driver;
-
 
     @FindBy(id="username")
     WebElement emailInput;
@@ -39,8 +34,11 @@ public class LoginPage_PF_IDRIVE extends CommonToAllPage {
 
     public void idriveValidLogin(String email, String password){
 
+
         openIDriveUrl();
+        wait.until(ExpectedConditions.visibilityOf(emailInput));
         enterInput(emailInput,email);
+        wait.until(ExpectedConditions.visibilityOf(passwordInput));
         enterInput(passwordInput,password);
         clickElement(signingBTN);
 
@@ -49,7 +47,7 @@ public class LoginPage_PF_IDRIVE extends CommonToAllPage {
 
     public String idriveINvalidLogin(String email, String password){
 
-        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15));
+
 
         openIDriveUrl();
         enterInput(emailInput,email);
@@ -60,23 +58,6 @@ public class LoginPage_PF_IDRIVE extends CommonToAllPage {
         return getText(error_msg);
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

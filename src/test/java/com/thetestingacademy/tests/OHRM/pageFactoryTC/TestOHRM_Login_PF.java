@@ -65,11 +65,14 @@ public class TestOHRM_Login_PF extends CommonToAllTest {
         logger.info("Start tha Logout Page verifying positive test case  in  HRM Side ");
         Allure.step("Logout from dashboard");
 
+
         LogOutPage_PF_Ohr logOutPagePfOhr = new LogOutPage_PF_Ohr(DriverManager.getDriver());
         String loinPage = logOutPagePfOhr.logoutUser();
         Allure.step("Verify login page visible after logout");
+
         Assert.assertEquals(loinPage, "Login", "test pass login to logout user ");
         ScreenshotUtils.takeScreenshot("After Logout");
+
         Allure.step("Verify tha logout page");
         Allure.step("Verify tha logout page");
 
