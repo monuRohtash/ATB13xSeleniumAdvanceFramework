@@ -12,10 +12,10 @@ public class CommonToAllTest {
         DriverManager.initDriver();
     }
 
-//    @AfterMethod
-//    public void tead() {
-//        DriverManager.downDriver();
-//    }
+    @AfterMethod
+    public void tead() {
+        DriverManager.downDriver();
+    }
 
 
 }

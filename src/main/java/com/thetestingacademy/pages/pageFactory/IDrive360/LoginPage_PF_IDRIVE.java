@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 
 public class LoginPage_PF_IDRIVE extends CommonToAllPage {
 
@@ -18,21 +19,21 @@ public class LoginPage_PF_IDRIVE extends CommonToAllPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(id="username")
+    @FindBy(id = "username")
     WebElement emailInput;
 
-    @FindBy(id="password")
-     WebElement passwordInput;
+    @FindBy(id = "password")
+    WebElement passwordInput;
 
-    @FindBy(xpath="//button[@type=\"submit\"]")
+    @FindBy(xpath = "//button[@type=\"submit\"]")
     WebElement signingBTN;
 
     @FindBy(xpath = "//p[contains(text(),'Email address or password you entered is incorrect')]")
     WebElement error_msg;
 
 
-
     public void idriveValidLogin(String email, String password){
+
 
 
         openIDriveUrl();
@@ -48,7 +49,6 @@ public class LoginPage_PF_IDRIVE extends CommonToAllPage {
     public String idriveINvalidLogin(String email, String password){
 
 
-
         openIDriveUrl();
         enterInput(emailInput,email);
         enterInput(passwordInput,password);
@@ -58,6 +58,7 @@ public class LoginPage_PF_IDRIVE extends CommonToAllPage {
         return getText(error_msg);
 
     }
+
 
 
 }

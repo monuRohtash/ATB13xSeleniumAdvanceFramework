@@ -56,8 +56,11 @@ public class PaymentPage_PF_IDRIVE extends CommonToAllPage {
     @FindBy(xpath = "(//span[@class='id-checkmark'])[3]")
     WebElement agreeTermsCheckbox;
 
-    @FindBy(xpath = "//div[contains(text(),'You must agree to the terms')]")
-    WebElement agreeTermsErrorMsg;
+
+    // ✅ Card Error Message (Displayed after invalid/test card submission)
+    @FindBy(xpath = "//div[contains(@class,'error') and contains(text(),'Your card was declined')]")
+    WebElement cardErrorMsg;
+
 
     // ✅ Upgrade Button
     @FindBy(id = "frm-btn1")
@@ -139,9 +142,6 @@ public class PaymentPage_PF_IDRIVE extends CommonToAllPage {
     }
 
 
-
-
-
     // ---------- Complete Payment Form ----------
 
     public void fillPaymentForm(String billingAddress, String country, String state, String postalCode) {
@@ -151,6 +151,18 @@ public class PaymentPage_PF_IDRIVE extends CommonToAllPage {
         enterPostalCode(postalCode);
         agreeToTerms();
         clickUpgradeButton();
+    }
+
+
+    // ✅ Method to capture error text
+    public String getCardErrorMessage() {
+        try {
+            wait.until(ExpectedConditions.visibilityOf(cardErrorMsg));
+            return getText(cardErrorMsg);
+        } catch (Exception e) {
+            System.out.println("⚠️ Card error message not found: " + e.getMessage());
+            return "";
+        }
     }
 
 
